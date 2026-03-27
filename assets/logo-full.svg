@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="520" viewBox="0 0 440 520">
+  <!-- Background -->
+  <rect x="0" y="0" width="440" height="520" rx="40" fill="#faf6f0"/>
+
+  <!-- Rays — accent colors radiating from center -->
+  <g opacity="1">
+    <!-- Center top -->
+    <line x1="220" y1="252" x2="220" y2="56" stroke="#7c5cad" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+    <!-- Upper right -->
+    <line x1="220" y1="252" x2="340" y2="76" stroke="#9a7032" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+    <!-- Right -->
+    <line x1="220" y1="252" x2="384" y2="170" stroke="#547c47" stroke-width="2.5" stroke-linecap="round" opacity="0.42"/>
+    <!-- Far right -->
+    <line x1="220" y1="252" x2="396" y2="232" stroke="#3568b2" stroke-width="2" stroke-linecap="round" opacity="0.32"/>
+    <!-- Upper left -->
+    <line x1="220" y1="252" x2="100" y2="76" stroke="#b4637a" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+    <!-- Left -->
+    <line x1="220" y1="252" x2="56" y2="170" stroke="#2b7d84" stroke-width="2.5" stroke-linecap="round" opacity="0.42"/>
+    <!-- Far left -->
+    <line x1="220" y1="252" x2="44" y2="232" stroke="#9a7032" stroke-width="2" stroke-linecap="round" opacity="0.32"/>
+    <!-- Inner rays for density -->
+    <line x1="220" y1="252" x2="282" y2="62" stroke="#547c47" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+    <line x1="220" y1="252" x2="158" y2="62" stroke="#3568b2" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+    <line x1="220" y1="252" x2="362" y2="130" stroke="#b4637a" stroke-width="1.5" stroke-linecap="round" opacity="0.28"/>
+    <line x1="220" y1="252" x2="78" y2="130" stroke="#7c5cad" stroke-width="1.5" stroke-linecap="round" opacity="0.28"/>
+  </g>
+
+  <!-- Concentric wash circles — each ring is a bg-wash color from the palette -->
+  <circle cx="220" cy="252" r="104" fill="#f5eddb" opacity="0.5"/>
+  <circle cx="220" cy="252" r="84" fill="#ede6f5" opacity="0.45"/>
+  <circle cx="220" cy="252" r="64" fill="#e6f0e0" opacity="0.5"/>
+  <circle cx="220" cy="252" r="44" fill="#ddf0f0" opacity="0.55"/>
+  <circle cx="220" cy="252" r="26" fill="#e2ecf8" opacity="0.5"/>
+  <circle cx="220" cy="252" r="12" fill="#f5e4e8" opacity="0.6"/>
+
+  <!-- Horizon line — masks the bottom half of the sun -->
+  <rect x="0" y="252" width="440" height="268" rx="0" fill="#faf6f0"/>
+  <line x1="20" y1="252" x2="420" y2="252" stroke="#e8e0d6" stroke-width="1.5"/>
+
+  <!-- Wordmark -->
+  <text x="220" y="320" text-anchor="middle" font-family="Georgia, 'Times New Roman', 'Palatino Linotype', serif" font-size="36" fill="#4c4f69" font-weight="500" letter-spacing="8">PASTEL</text>
+  <text x="220" y="364" text-anchor="middle" font-family="Georgia, 'Times New Roman', 'Palatino Linotype', serif" font-size="36" fill="#7c5cad" font-weight="500" letter-spacing="8">DAWN</text>
+
+  <!-- Divider -->
+  <line x1="140" y1="392" x2="300" y2="392" stroke="#ddd4c8" stroke-width="1"/>
+
+  <!-- Tagline -->
+  <text x="220" y="424" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#9893a5" letter-spacing="3.5">A WARM LIGHT THEME</text>
+</svg>

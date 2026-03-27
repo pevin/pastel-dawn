@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- Background -->
+  <rect x="0" y="0" width="512" height="512" rx="96" fill="#faf6f0"/>
+
+  <!-- Rays -->
+  <g>
+    <line x1="256" y1="296" x2="256" y2="52" stroke="#7c5cad" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="256" y1="296" x2="416" y2="80" stroke="#9a7032" stroke-width="4" stroke-linecap="round" opacity="0.45"/>
+    <line x1="256" y1="296" x2="472" y2="196" stroke="#547c47" stroke-width="4" stroke-linecap="round" opacity="0.42"/>
+    <line x1="256" y1="296" x2="484" y2="270" stroke="#3568b2" stroke-width="3" stroke-linecap="round" opacity="0.32"/>
+    <line x1="256" y1="296" x2="96" y2="80" stroke="#b4637a" stroke-width="4" stroke-linecap="round" opacity="0.45"/>
+    <line x1="256" y1="296" x2="40" y2="196" stroke="#2b7d84" stroke-width="4" stroke-linecap="round" opacity="0.42"/>
+    <line x1="256" y1="296" x2="28" y2="270" stroke="#9a7032" stroke-width="3" stroke-linecap="round" opacity="0.32"/>
+    <line x1="256" y1="296" x2="340" y2="60" stroke="#547c47" stroke-width="2.5" stroke-linecap="round" opacity="0.3"/>
+    <line x1="256" y1="296" x2="172" y2="60" stroke="#3568b2" stroke-width="2.5" stroke-linecap="round" opacity="0.3"/>
+    <line x1="256" y1="296" x2="450" y2="146" stroke="#b4637a" stroke-width="2.5" stroke-linecap="round" opacity="0.28"/>
+    <line x1="256" y1="296" x2="62" y2="146" stroke="#7c5cad" stroke-width="2.5" stroke-linecap="round" opacity="0.28"/>
+  </g>
+
+  <!-- Concentric wash circles -->
+  <circle cx="256" cy="296" r="168" fill="#f5eddb" opacity="0.5"/>
+  <circle cx="256" cy="296" r="136" fill="#ede6f5" opacity="0.45"/>
+  <circle cx="256" cy="296" r="104" fill="#e6f0e0" opacity="0.5"/>
+  <circle cx="256" cy="296" r="74" fill="#ddf0f0" opacity="0.55"/>
+  <circle cx="256" cy="296" r="46" fill="#e2ecf8" opacity="0.5"/>
+  <circle cx="256" cy="296" r="20" fill="#f5e4e8" opacity="0.6"/>
+
+  <!-- Horizon mask -->
+  <rect x="0" y="296" width="512" height="216" fill="#faf6f0"/>
+  <line x1="40" y1="296" x2="472" y2="296" stroke="#e8e0d6" stroke-width="2"/>
+</svg>
