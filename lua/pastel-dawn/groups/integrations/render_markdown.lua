@@ -1,0 +1,36 @@
+local M = {}
+function M.setup(c, opts)
+  return {
+    RenderMarkdownH1 = { fg = c.iris, bold = true },
+    RenderMarkdownH2 = { fg = c.blue, bold = true },
+    RenderMarkdownH3 = { fg = c.teal, bold = true },
+    RenderMarkdownH4 = { fg = c.green, bold = true },
+    RenderMarkdownH5 = { fg = c.gold, bold = true },
+    RenderMarkdownH6 = { fg = c.fg_dim, bold = true },
+    RenderMarkdownH1Bg = { bg = c.iris_bg },
+    RenderMarkdownH2Bg = { bg = c.blue_bg },
+    RenderMarkdownH3Bg = { bg = c.teal_bg },
+    RenderMarkdownH4Bg = { bg = c.green_bg },
+    RenderMarkdownH5Bg = { bg = c.gold_bg },
+    RenderMarkdownH6Bg = { bg = c.surface0 },
+    RenderMarkdownCode = { bg = c.surface0 },
+    RenderMarkdownCodeInline = { fg = c.fg, bg = c.surface0 },
+    RenderMarkdownBullet = { fg = c.fg_dim },
+    RenderMarkdownQuote = { fg = c.fg_dim, bg = c.surface0, italic = true },
+    RenderMarkdownDash = { fg = c.surface2 },
+    RenderMarkdownLink = { fg = c.link, underline = true },
+    RenderMarkdownWikiLink = { fg = c.teal, underline = true },
+    RenderMarkdownHighlight = { bg = c.gold_bg },
+    RenderMarkdownMath = { fg = c.teal },
+    RenderMarkdownTableHead = { fg = c.fg, bg = c.surface0, bold = true },
+    RenderMarkdownTableRow = { fg = c.fg },
+    RenderMarkdownTableFill = { fg = c.surface1 },
+    RenderMarkdownChecked = { fg = c.green },
+    RenderMarkdownUnchecked = { fg = c.fg_muted },
+    RenderMarkdownTodo = { fg = c.blue },
+    RenderMarkdownSign = { fg = c.fg_muted, bg = c.none },
+    RenderMarkdownMinus = { fg = c.git_delete },
+    RenderMarkdownPlus = { fg = c.git_add },
+  }
+end
+return M

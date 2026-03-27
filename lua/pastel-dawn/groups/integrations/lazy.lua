@@ -1,0 +1,38 @@
+local M = {}
+function M.setup(c, opts)
+  return {
+    LazyNormal = { fg = c.fg, bg = c.bg_float },
+    LazyBorder = { fg = c.surface2, bg = c.bg_float },
+    LazyButton = { fg = c.fg, bg = c.surface0 },
+    LazyButtonActive = { fg = c.fg, bg = c.iris_bg, bold = true },
+    LazyH1 = { fg = c.bg, bg = c.iris, bold = true },
+    LazyH2 = { fg = c.blue, bold = true },
+    LazySpecial = { fg = c.iris },
+    LazyReasonPlugin = { fg = c.blue },
+    LazyReasonRuntime = { fg = c.iris },
+    LazyReasonImport = { fg = c.teal },
+    LazyReasonKeys = { fg = c.gold },
+    LazyReasonStart = { fg = c.green },
+    LazyReasonSource = { fg = c.fg_dim },
+    LazyReasonFt = { fg = c.teal },
+    LazyReasonCmd = { fg = c.rose },
+    LazyReasonEvent = { fg = c.iris },
+    LazyReasonCustom = { fg = c.fg_muted },
+    LazyProgressDone = { fg = c.green, bold = true },
+    LazyProgressTodo = { fg = c.fg_muted },
+    LazyProp = { fg = c.fg_dim },
+    LazyValue = { fg = c.teal },
+    LazyLocal = { fg = c.gold },
+    LazyUrl = { fg = c.link, underline = true },
+    LazyCommit = { fg = c.green },
+    LazyCommitType = { fg = c.teal },
+    LazyCommitScope = { fg = c.fg_dim },
+    LazyCommitIssue = { fg = c.rose },
+    LazyDimmed = { fg = c.fg_muted },
+    LazyDir = { fg = c.blue },
+    LazyNoCond = { fg = c.fg_muted, italic = true },
+    LazyTaskOutput = { fg = c.fg },
+    LazyTaskError = { fg = c.error },
+  }
+end
+return M

@@ -1,0 +1,36 @@
+local M = {}
+function M.setup(c, opts)
+  return {
+    NvimTreeNormal = { fg = c.fg, bg = c.bg_alt },
+    NvimTreeNormalFloat = { fg = c.fg, bg = c.bg_float },
+    NvimTreeNormalNC = { fg = c.fg, bg = c.bg_alt },
+    NvimTreeVertSplit = { fg = c.surface1 },
+    NvimTreeWinSeparator = { fg = c.surface1, bg = c.bg_alt },
+    NvimTreeEndOfBuffer = { fg = c.bg_alt },
+    NvimTreeRootFolder = { fg = c.iris, bold = true },
+    NvimTreeGitDirty = { fg = c.warn },
+    NvimTreeGitNew = { fg = c.git_add },
+    NvimTreeGitDeleted = { fg = c.git_delete },
+    NvimTreeGitMerge = { fg = c.iris },
+    NvimTreeGitRenamed = { fg = c.git_change },
+    NvimTreeGitStaged = { fg = c.git_add },
+    NvimTreeGitIgnored = { fg = c.fg_muted },
+    NvimTreeFolderName = { fg = c.blue },
+    NvimTreeOpenedFolderName = { fg = c.blue, bold = true },
+    NvimTreeEmptyFolderName = { fg = c.fg_muted },
+    NvimTreeFolderIcon = { fg = c.blue },
+    NvimTreeOpenedFolderIcon = { fg = c.blue },
+    NvimTreeFileIcon = { fg = c.fg_dim },
+    NvimTreeSpecialFile = { fg = c.teal, bold = true },
+    NvimTreeIndentMarker = { fg = c.surface1 },
+    NvimTreeCursorLine = { bg = c.bg_cursorline },
+    NvimTreeSymlink = { fg = c.teal },
+    NvimTreeStatuslineNc = { fg = c.fg_muted, bg = c.bg_alt },
+    NvimTreeBookmark = { fg = c.gold },
+    NvimTreeCopiedHL = { bg = c.green_bg },
+    NvimTreeCutHL = { bg = c.rose_bg },
+    NvimTreeExecFile = { fg = c.green, bold = true },
+    NvimTreeImageFile = { fg = c.teal },
+  }
+end
+return M

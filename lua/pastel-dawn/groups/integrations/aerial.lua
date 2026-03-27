@@ -1,0 +1,36 @@
+local M = {}
+function M.setup(c, opts)
+  return {
+    AerialLine = { bg = c.bg_cursorline },
+    AerialLineNC = { bg = c.surface0 },
+    AerialArrayIcon = { fg = c.fg },
+    AerialBooleanIcon = { fg = c.teal },
+    AerialClassIcon = { fg = c.blue },
+    AerialConstantIcon = { fg = c.teal },
+    AerialConstructorIcon = { fg = c.iris },
+    AerialEnumIcon = { fg = c.blue },
+    AerialEnumMemberIcon = { fg = c.teal },
+    AerialEventIcon = { fg = c.rose },
+    AerialFieldIcon = { fg = c.fg },
+    AerialFileIcon = { fg = c.fg_dim },
+    AerialFunctionIcon = { fg = c.fg },
+    AerialInterfaceIcon = { fg = c.blue },
+    AerialKeyIcon = { fg = c.iris },
+    AerialMethodIcon = { fg = c.fg },
+    AerialModuleIcon = { fg = c.fg_dim },
+    AerialNamespaceIcon = { fg = c.fg_dim },
+    AerialNullIcon = { fg = c.fg_muted },
+    AerialNumberIcon = { fg = c.teal },
+    AerialObjectIcon = { fg = c.fg },
+    AerialOperatorIcon = { fg = c.fg_dim },
+    AerialPackageIcon = { fg = c.fg_dim },
+    AerialPropertyIcon = { fg = c.fg },
+    AerialStringIcon = { fg = c.green },
+    AerialStructIcon = { fg = c.blue },
+    AerialTypeParameterIcon = { fg = c.blue },
+    AerialVariableIcon = { fg = c.fg },
+    AerialNormal = { fg = c.fg, bg = c.bg_alt },
+    AerialGuide = { fg = c.surface1 },
+  }
+end
+return M
