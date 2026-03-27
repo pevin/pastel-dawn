@@ -1,12 +1,17 @@
-# Pastel Dawn
+<p align="center">
+  <img src="assets/logo-horizontal@2x.png" alt="pastel dawn" width="560" />
+</p>
 
-A warm light colorscheme for Neovim — minimal syntax highlighting with soft background washes for readability.
+<p align="center">
+  <em>A warm light theme with background-washed syntax highlighting</em>
+</p>
 
-![Python](./assets/python.png)
-![TypeScript](./assets/typescript.png)
-![Rust](./assets/rust.png)
-
-> Screenshots need to be captured manually with a clean Neovim config using only pastel-dawn.
+<p align="center">
+  <a href="#installation">Installation</a> ·
+  <a href="#configuration">Configuration</a> ·
+  <a href="#design-philosophy">Philosophy</a> ·
+  <a href="#color-palette">Palette</a>
+</p>
 
 ---
 
@@ -301,6 +306,15 @@ After changing colors in `palette.lua`, update `palette.json` to match, then run
 ```sh
 make extras
 ```
+
+---
+
+## Ports
+
+| Editor | Repository |
+|--------|------------|
+| Neovim | [pastel-dawn](https://github.com/pevin/pastel-dawn) (you are here) |
+| VS Code / Cursor | [pastel-dawn-vscode](https://github.com/pevin/pastel-dawn-vscode) |
 
 ---
 
