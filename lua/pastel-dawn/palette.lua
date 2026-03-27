@@ -7,7 +7,7 @@ M.colors = {
   -- ── Base UI colors ──────────────────────────────────────────────
   -- Warm cream background inspired by Tonsky's blog (#FFFFF2-ish)
   -- blended with Rosé Pine Dawn base (#faf4ed) and Catppuccin Latte base (#eff1f5)
-  bg        = "#faf6f0",   -- main editor background: warm parchment
+  bg        = "#faf4ed",   -- main editor background: warm parchment
   bg_alt    = "#f4ede5",   -- sidebar / inactive background
   bg_float  = "#f0e8df",   -- floating windows, popups
   bg_visual = "#e8ddd1",   -- visual selection
@@ -20,7 +20,7 @@ M.colors = {
   surface2  = "#cfc5b8",   -- stronger borders
 
   -- ── Text colors ─────────────────────────────────────────────────
-  fg        = "#4c4f69",   -- primary text (Catppuccin Latte text)
+  fg        = "#575279",   -- primary text (Rosé Pine Dawn text — warmer)
   fg_dim    = "#6c6f85",   -- secondary text / punctuation
   fg_muted  = "#9893a5",   -- very muted: line numbers, fold columns
   fg_faint  = "#b5afc4",   -- very faint: indent guides, whitespace chars
@@ -55,7 +55,7 @@ M.colors = {
   blue_bg   = "#e2ecf8",   -- soft blue wash behind types
 
   -- ── Diagnostic / UI accent colors ───────────────────────────────
-  error     = "#d20f39",   -- Catppuccin Latte red
+  error     = "#b0313f",   -- muted rose-red (less harsh on light bg)
   warn      = "#df8e1d",   -- Catppuccin Latte yellow
   info      = "#1e66f5",   -- Catppuccin Latte blue
   hint      = "#179299",   -- Catppuccin Latte teal

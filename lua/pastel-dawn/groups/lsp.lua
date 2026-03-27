@@ -76,16 +76,17 @@ function M.setup(c, opts)
     ["@lsp.type.event"]        = { fg = c.teal },
 
     -- ── LSP modifiers (@lsp.mod.*) ───────────────────────────
-    ["@lsp.mod.declaration"]   = { bold = true },
-    ["@lsp.mod.definition"]    = { bold = true },
+    -- No bold — target aesthetic avoids bold on declarations
+    ["@lsp.mod.declaration"]   = {},
+    ["@lsp.mod.definition"]    = {},
 
     -- ── LSP type modifiers (@lsp.typemod.*) ─────────────────
-    -- Definitions (structural landmarks): iris + bg wash + bold
-    ["@lsp.typemod.function.declaration"]  = { fg = c.iris, bg = c.iris_bg, bold = true },
-    ["@lsp.typemod.function.definition"]   = { fg = c.iris, bg = c.iris_bg, bold = true },
-    ["@lsp.typemod.method.declaration"]    = { fg = c.iris, bg = c.iris_bg, bold = true },
-    ["@lsp.typemod.method.definition"]     = { fg = c.iris, bg = c.iris_bg, bold = true },
-    ["@lsp.typemod.class.declaration"]     = { fg = c.iris, bg = c.iris_bg, bold = true },
+    -- Definitions (structural landmarks): iris + subtle bg wash, no bold
+    ["@lsp.typemod.function.declaration"]  = { fg = c.iris, bg = c.iris_bg },
+    ["@lsp.typemod.function.definition"]   = { fg = c.iris, bg = c.iris_bg },
+    ["@lsp.typemod.method.declaration"]    = { fg = c.iris, bg = c.iris_bg },
+    ["@lsp.typemod.method.definition"]     = { fg = c.iris, bg = c.iris_bg },
+    ["@lsp.typemod.class.declaration"]     = { fg = c.iris, bg = c.iris_bg },
     ["@lsp.typemod.variable.readonly"]     = { fg = c.teal, bg = c.teal_bg },
     ["@lsp.typemod.variable.defaultLibrary"] = { fg = c.fg },
     ["@lsp.typemod.function.defaultLibrary"] = { fg = c.fg },

@@ -55,7 +55,7 @@ function M.setup(c, opts)
     -- ── Types: blue ──────────────────────────────────────────
     ["@type"]                  = style({ fg = c.blue, bg = c.blue_bg }, opts.styles.types),
     ["@type.builtin"]          = { fg = c.blue },
-    ["@type.definition"]       = { fg = c.iris, bg = c.iris_bg, bold = true },
+    ["@type.definition"]       = { fg = c.iris, bg = c.iris_bg },
     ["@type.qualifier"]        = { fg = c.fg_dim },
 
     -- ── Keywords: dimmed (Alabaster) ─────────────────────────

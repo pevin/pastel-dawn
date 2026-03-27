@@ -60,7 +60,7 @@ function M.setup(c, opts)
     Underlined   = { fg = c.link, underline = true },
     Ignore       = { fg = c.fg_faint },
     Error        = { fg = c.error, bg = c.error_bg },
-    Todo         = { fg = c.todo, bg = c.gold_bg, bold = true },
+    Todo         = { fg = c.todo, bg = c.gold_bg },
 
     -- Diff (for diff-syntax files, fugitive, etc.)
     diffAdded    = { fg = c.git_add },
