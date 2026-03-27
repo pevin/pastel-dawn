@@ -1,0 +1,74 @@
+{
+  "bg":           "#faf6f0",
+  "bg_alt":       "#f4ede5",
+  "bg_float":     "#f0e8df",
+  "bg_visual":    "#e8ddd1",
+  "bg_search":    "#f5e0b7",
+  "bg_cursorline":"#f2ece4",
+
+  "surface0":     "#e8e0d6",
+  "surface1":     "#ddd4c8",
+  "surface2":     "#cfc5b8",
+
+  "fg":           "#4c4f69",
+  "fg_dim":       "#6c6f85",
+  "fg_muted":     "#9893a5",
+  "fg_faint":     "#b5afc4",
+
+  "green":        "#547c47",
+  "green_bg":     "#e6f0e0",
+  "teal":         "#2b7d84",
+  "teal_bg":      "#ddf0f0",
+  "gold":         "#9a7032",
+  "gold_bg":      "#f5eddb",
+  "iris":         "#7c5cad",
+  "iris_bg":      "#ede6f5",
+  "rose":         "#b4637a",
+  "rose_bg":      "#f5e4e8",
+  "blue":         "#3568b2",
+  "blue_bg":      "#e2ecf8",
+
+  "error":        "#d20f39",
+  "warn":         "#df8e1d",
+  "info":         "#1e66f5",
+  "hint":         "#179299",
+  "error_bg":     "#fce4e8",
+  "warn_bg":      "#fdf0d8",
+  "info_bg":      "#e4ecfc",
+  "hint_bg":      "#ddf2f3",
+
+  "diff_add":     "#dcefd4",
+  "diff_change":  "#e8e0cf",
+  "diff_delete":  "#f5d8d8",
+  "diff_text":    "#d4cfc0",
+
+  "git_add":      "#549c3b",
+  "git_change":   "#c08b30",
+  "git_delete":   "#c94f5e",
+
+  "link":         "#286983",
+  "todo":         "#ea9d34",
+
+  "terminal": {
+    "normal": {
+      "black":   "#e8e0d6",
+      "red":     "#b4637a",
+      "green":   "#547c47",
+      "yellow":  "#9a7032",
+      "blue":    "#3568b2",
+      "magenta": "#7c5cad",
+      "cyan":    "#2b7d84",
+      "white":   "#4c4f69"
+    },
+    "bright": {
+      "black":   "#cfc5b8",
+      "red":     "#c94f5e",
+      "green":   "#5e9a4d",
+      "yellow":  "#b8932a",
+      "blue":    "#4a7ecc",
+      "magenta": "#9472c4",
+      "cyan":    "#379a9f",
+      "white":   "#6c6f85"
+    }
+  }
+}
