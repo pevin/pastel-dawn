@@ -15,6 +15,18 @@
 
 ---
 
+## Screenshots
+
+| Lua | Python |
+|-----|--------|
+| ![Lua](assets/screenshots/lua.png) | ![Python](assets/screenshots/python.png) |
+
+| Rust | TypeScript |
+|------|------------|
+| ![Rust](assets/screenshots/rust.png) | ![TypeScript](assets/screenshots/typescript.png) |
+
+---
+
 ## Design Philosophy
 
 Pastel Dawn is inspired by three themes and one blog post:
