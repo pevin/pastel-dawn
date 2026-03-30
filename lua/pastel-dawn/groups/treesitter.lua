@@ -1,6 +1,7 @@
 -- pastel-dawn/lua/pastel-dawn/groups/treesitter.lua
 -- Treesitter highlight groups
--- Philosophy matches highlights.lua: function CALLS = fg, definitions = iris via LSP.
+-- Philosophy matches highlights.lua: function CALLS = fg, definitions = iris.
+-- Definitions use @function.definition (custom queries) with LSP semantic tokens as fallback.
 -- Numbers/booleans = teal. Imports/preprocessor = rose. Types = blue.
 
 local M = {}
@@ -32,13 +33,15 @@ function M.setup(c, opts)
     ["@constant.builtin"]      = { fg = c.teal, bg = c.teal_bg },
     ["@constant.macro"]        = { fg = c.teal, bg = c.teal_bg },
 
-    -- ── Functions: CALLS = base fg, DEFINITIONS = iris via LSP ──
+    -- ── Functions: CALLS = base fg, DEFINITIONS = iris ──────────
     ["@function"]              = style({ fg = c.fg }, opts.styles.functions),
     ["@function.builtin"]      = { fg = c.fg },
     ["@function.macro"]        = { fg = c.fg },
     ["@function.call"]         = { fg = c.fg },
+    ["@function.definition"]   = { fg = c.iris, bg = c.iris_bg },
     ["@function.method"]       = style({ fg = c.fg }, opts.styles.functions),
     ["@function.method.call"]  = { fg = c.fg },
+    ["@function.method.definition"] = { fg = c.iris, bg = c.iris_bg },
     -- Legacy names
     ["@method"]                = style({ fg = c.fg }, opts.styles.functions),
     ["@method.call"]           = { fg = c.fg },
