@@ -37,7 +37,14 @@ function M.setup(c, opts)
     Exception    = { fg = c.fg_dim },
 
     -- Preprocessor / imports: rose
-    PreProc      = { fg = c.rose, bg = c.rose_bg },
+    -- PreProc has NO bg: TypeScript's old syntax links typescriptFuncCallArg,
+    -- typescriptArrowFuncArg, typescriptCall, typescriptParamImpl, and
+    -- typescriptDestructureVariable all to PreProc. Those are REGIONS spanning
+    -- the entire (...) of a call/arrow/params, so bg would bleed onto spaces
+    -- inside every function call and arrow function in TypeScript.
+    -- Include/Define/PreCondit/Macro keep bg — those link to specific C/C++
+    -- directives (#include, #define, #ifdef) which are single targeted tokens.
+    PreProc      = { fg = c.rose },
     Include      = { fg = c.rose, bg = c.rose_bg },
     Define       = { fg = c.rose, bg = c.rose_bg },
     Macro        = { fg = c.rose, bg = c.rose_bg },
@@ -49,8 +56,11 @@ function M.setup(c, opts)
     Structure    = { fg = c.blue },
     Typedef      = { fg = c.blue },
 
-    -- Special
-    Special      = { fg = c.rose },
+    -- Special: rose with bg to match @keyword.import — TypeScript's old syntax
+    -- links typescriptImport/typescriptExport to Special, and when vim regex
+    -- highlighting runs alongside treesitter it can override @keyword.import.
+    -- Adding the bg here keeps import/from/export consistent either way.
+    Special      = { fg = c.rose, bg = c.rose_bg },
     SpecialChar  = { fg = c.rose },
     Tag          = { fg = c.rose },
     Delimiter    = { fg = c.fg_dim },
