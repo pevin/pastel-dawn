@@ -16,11 +16,12 @@ function M.setup(c, opts)
     FloatFooter   = { fg = c.fg_muted, bg = c.bg_float },
 
     -- Cursor
-    Cursor        = { fg = c.bg, bg = c.fg },
-    CursorIM      = { fg = c.bg, bg = c.fg },
-    CursorLine    = { bg = c.bg_cursorline },
-    CursorColumn  = { bg = c.bg_cursorline },
-    CursorLineNr  = { fg = c.gold, bold = true },
+    Cursor        = { fg = c.bg, bg = c.fg_muted }, -- normal mode cursor
+    lCursor       = { fg = c.bg, bg = c.fg_muted }, -- cursor when language-mapping is active
+    CursorIM      = { fg = c.bg, bg = c.fg_muted }, -- cursor in IME mode
+    CursorLine    = { bg = c.bg_cursorline }, -- screen line at the cursor
+    CursorColumn  = { bg = c.bg_cursorline }, -- screen column at the cursor
+    CursorLineNr  = { fg = c.gold, bold = true }, -- line number of the cursor line
     ColorColumn   = { bg = c.bg_cursorline },
     LineNr        = { fg = c.fg_muted },
     LineNrAbove   = { fg = c.fg_faint },
