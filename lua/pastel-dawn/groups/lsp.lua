@@ -69,9 +69,13 @@ function M.setup(c, opts)
     ["@lsp.type.comment"]      = { link = "Comment" },
     ["@lsp.type.string"]       = { link = "String" },
     ["@lsp.type.number"]       = { link = "Number" },
-    ["@lsp.type.decorator"]    = { fg = c.rose, bg = c.rose_bg },
-    ["@lsp.type.macro"]        = { fg = c.rose, bg = c.rose_bg },
-    ["@lsp.type.regexp"]       = { fg = c.rose, bg = c.rose_bg },
+    -- No bg on these: the LSP sends tokens covering wide ranges (entire decorator
+    -- call, macro invocation, regex literal) — bg would bleed onto spaces inside
+    -- ()/{}. The fg alone distinguishes these tokens; treesitter @attribute and
+    -- @string.regex still provide the bg wash on their specific leaf captures.
+    ["@lsp.type.decorator"]    = { fg = c.rose },
+    ["@lsp.type.macro"]        = { fg = c.rose },
+    ["@lsp.type.regexp"]       = { fg = c.rose },
     ["@lsp.type.operator"]     = { fg = c.fg_dim },
     ["@lsp.type.event"]        = { fg = c.teal },
 
